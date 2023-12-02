@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65dba62-dd5c-4469-be71-4a4d9907bc40" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/shippingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Data/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Data/shippingData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/shippingData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ReturnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/selectAnimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/shippingData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/shippingData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/shippingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/shippingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +190,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701543430392</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1701544639549</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701544639549</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1701544654371</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701544654371</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

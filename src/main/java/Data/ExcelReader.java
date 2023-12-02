@@ -14,7 +14,7 @@ public class ExcelReader {
     static FileInputStream fis = null;
 
     public FileInputStream getFileInputStream() {
-        String filePath = System.getProperty("user.dir") + "/src/test/java/data/ShipData.xlsx";
+        String filePath = System.getProperty("user.dir") + "/src/main/java/Data/shippingData.xlsx";
         File srcFile = new File(filePath);
 
         try {
@@ -32,7 +32,7 @@ public class ExcelReader {
         XSSFSheet sheet = wb.getSheetAt(0);
 
         int TotalNumberOfRows = (sheet.getLastRowNum() + 1);
-        int TotalNumberOfCols = 11;
+        int TotalNumberOfCols = 10;
 
         String[][] arrayExcelData = new String[TotalNumberOfRows][TotalNumberOfCols];
 

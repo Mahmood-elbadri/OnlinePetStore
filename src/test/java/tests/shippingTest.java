@@ -7,6 +7,10 @@ import Data.ExcelReader;
 
 
 import java.io.IOException;
+import java.text.DecimalFormatSymbols;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public class shippingTest extends TestBase {
     PaymentPage pay;
@@ -18,10 +22,13 @@ public class shippingTest extends TestBase {
     }
 
     @Test(dataProvider = "shippingData")
-    public void testPay(String cartTyp, String numberCredit, String expire, String firstName,
+    public void testPay(String numberCredit, String expire, String firstName,
                         String lastName, String address, String addressTwo, String billCity,
                         String state, String billZip, String country) {
         pay = new PaymentPage(driver);
-        pay.shippingData(cartTyp, numberCredit, expire, firstName, lastName, address, addressTwo, billCity, state, billZip, country);
+        DecimalFormat decimalFormat = (DecimalFormat) DecimalFormat.getInstance();
+        DecimalFormatSymbols symbols = decimalFormat.getDecimalFormatSymbols();
+        char decimalSeparator = symbols.getDecimalSeparator();
+        pay.shippingData(numberCredit, expire, firstName, lastName, address, addressTwo, billCity, state, String.valueOf(billZip).replace(String.valueOf(decimalSeparator), ""), country);
     }
 }
