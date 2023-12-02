@@ -33,12 +33,12 @@ public class PaymentPage extends PageBase {
     private WebElement continueBtn;
     public PaymentPage(WebDriver driver) {
         super(driver);
-        dropDown = new Select(cartType);
+
     }
 
     public void shippingData(String cartTyp, String numberCredit, String expire, String firstName, String lastName,
                              String address, String addressTwo, String billCity, String state, String billZip, String country) {
-
+        dropDown = new Select(cartType);
         dropDown.selectByValue(cartTyp);
         creditNumber.clear();
         creditNumber.sendKeys(numberCredit);

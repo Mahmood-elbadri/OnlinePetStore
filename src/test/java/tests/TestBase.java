@@ -28,7 +28,6 @@ public class TestBase {
     public void tearDown(){
         driver.quit();
     }
-
     @AfterMethod
     public void takeScreenshotOnFailure(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) {
