@@ -26,7 +26,7 @@ public class TestBase {
     }
     @AfterSuite
     public void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 
     @AfterMethod
