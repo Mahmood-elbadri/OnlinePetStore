@@ -7,6 +7,6 @@ public class PageBase {
     WebDriver driver;
     public PageBase (WebDriver driver){
         this.driver = driver;
-        PageFactory.initElements(driver,PageBase.class);
+        PageFactory.initElements(driver,this);
     }
 }
