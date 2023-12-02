@@ -28,16 +28,7 @@ public class TestBase {
     public void tearDown(){
         driver.quit();
     }
-    @DataProvider(name = "credentials")
-    public Object[][] data() throws IOException {
-        Random random = new Random();
-        int randomNumber = random.nextInt(9001) + 1000;
-        String name = "Lionel-Messi"+Integer.toString(randomNumber)+"@xxx.com";
-        String pass = "test123";
-        return new Object[][]{
-                {name,pass}
-        };
-    }
+
     @AfterMethod
     public void takeScreenshotOnFailure(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) {
