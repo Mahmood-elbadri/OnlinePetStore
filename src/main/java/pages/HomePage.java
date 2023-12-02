@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends PageBase {
-    @FindBy(linkText = "Reptiles")
+    @FindBy(xpath = "//*[@id=\"QuickLinks\"]/a[3]")
     private WebElement animalType;
 
 
