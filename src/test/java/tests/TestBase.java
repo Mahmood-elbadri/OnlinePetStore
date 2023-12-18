@@ -7,12 +7,10 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 public class TestBase {
     public static WebDriver driver;
 
@@ -24,6 +22,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://jpetstore.aspectran.com/catalog/");
     }
+
     @AfterSuite
     public void tearDown(){
         driver.quit();

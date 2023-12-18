@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.PaymentPage;
@@ -30,5 +31,6 @@ public class shippingTest extends TestBase {
         DecimalFormatSymbols symbols = decimalFormat.getDecimalFormatSymbols();
         char decimalSeparator = symbols.getDecimalSeparator();
         pay.shippingData(numberCredit, expire, firstName, lastName, address, addressTwo, billCity, state, String.valueOf(billZip).replace(String.valueOf(decimalSeparator), ""), country);
+        Assert.assertTrue(false);
     }
 }
